@@ -25,6 +25,7 @@ export type Frontmatter = {
 
 export const KNOWN_LANGUAGES = {
   English: 'en',
+  'Japanese(日本語)': 'ja',
 } as const;
 export const KNOWN_LANGUAGE_CODES = Object.values(KNOWN_LANGUAGES);
 
@@ -106,6 +107,69 @@ export const SIDEBAR: Sidebar = {
       {
         text: 'Overview',
         link: 'en/api',
+      },
+    ],
+  },
+  ja: {
+    Introduction: [
+      { text: 'なぜNest Commanderが必要か？', link: 'ja/introduction/intro' },
+      {
+        text: 'インストール',
+        link: 'ja/introduction/installation',
+      },
+    ],
+    Features: [
+      {
+        text: 'Commander',
+        link: 'ja/features/commander',
+      },
+      {
+        text: 'Inquirer',
+        link: 'ja/features/inquirer',
+      },
+      {
+        text: 'Command Factory',
+        link: 'ja/features/factory',
+      },
+      {
+        text: 'Plugins',
+        link: 'ja/features/plugins',
+      },
+      {
+        text: 'Utility Service',
+        link: 'ja/features/utility',
+      },
+    ],
+    Testing: [
+      {
+        text: 'インストール',
+        link: 'ja/testing/installation',
+      },
+      {
+        text: 'TestFactory',
+        link: 'ja/testing/factory',
+      },
+    ],
+    Schematics: [
+      {
+        text: 'インストール',
+        link: 'ja/schematics/installation',
+      },
+      {
+        text: '使い方',
+        link: 'ja/schematics/usage',
+      },
+    ],
+    'Execution and Publishing': [
+      {
+        text: 'Overview',
+        link: 'ja/execution',
+      },
+    ],
+    API: [
+      {
+        text: '概要',
+        link: 'ja/api',
       },
     ],
   },
